@@ -23,4 +23,3 @@ pipelines:
           - cd ../
           - npm install
           - npm test
-          - npm run doc
