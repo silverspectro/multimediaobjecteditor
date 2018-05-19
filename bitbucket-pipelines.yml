@@ -16,7 +16,7 @@ pipelines:
           - npm
           - node
         script:
-          - apt-get install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+          - apt-get install xvfb libgdk-pixbuf2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
           - git submodule init
           - git submodule update
           - cd editor
