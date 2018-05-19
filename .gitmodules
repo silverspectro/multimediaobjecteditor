@@ -1,0 +1,3 @@
+[submodule "editor"]
+	path = editor
+	url = https://B-Core@bitbucket.org/B-Core/multimediaobject-editor.git
