@@ -1,3 +1,6 @@
 [submodule "editor"]
 	path = editor
 	url = https://B-Core@bitbucket.org/B-Core/multimediaobjecteditor-editor.git
+[submodule "multimediaobject"]
+	path = multimediaobject
+	url = https://B-Core@bitbucket.org/B-Core/multimediaobject.git
