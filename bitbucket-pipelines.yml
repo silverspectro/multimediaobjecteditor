@@ -11,5 +11,10 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
+          - git submodule init
+          - git submodule update
+          - cd editor
+          - npm install
+          - cd ../
           - npm install
           - npm test
