@@ -19,6 +19,10 @@ pipelines:
           - git submodule init
           - git submodule update
           - git submodule foreach 'git submodule init && git submodule update'
+          - cp multimediaobject/src/config/config.tpl.js multimediaobject/src/config/config.js
+          - sed -i 's/{{ globalnamespace }}/MultimediaObjectEditor/g' multimediaobject/src/config/config.js
+          - sed -i 's/{{ namespace }}/_s4mConfig/g' multimediaobject/src/config/config.js
+          - sed -i 's/{{ container }}/scene/g' multimediaobject/src/config/config.js
           - cd editor && npm install
           - cd ../multimediaobject && npm install
           - cd ../ && npm test
