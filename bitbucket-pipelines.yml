@@ -18,6 +18,7 @@ pipelines:
         script:
           - git submodule init
           - git submodule update
+          - git submodule foreach 'git submodule init && git submodule update'
           - cd editor && npm install
           - cd ../multimediaobject && npm install
           - cd ../ && npm test
